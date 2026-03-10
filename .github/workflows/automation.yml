@@ -1,0 +1,15 @@
+name: AI Shorts Automation
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+    - cron: '30 7 * * *'
+    - cron: '30 10 * * *'
+    - cron: '30 14 * * *'
+    - cron: '30 17 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
